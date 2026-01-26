@@ -40,12 +40,26 @@ helm install falco falcosecurity/falco \
 
 ```
 k get pods -n falco -o wide
+
+kubectl wait pods --for=condition=Ready --all -n falco
+
 ```
 
+```
+helm upgrade --namespace falco falco falcosecurity/falco -f falco_custom_rules_cm.yaml --set falcosidekick.enabled=true --set falcosidekick.webui.enabled=true
+```
 
+```
+kubectl -n falco get svc
+```
 
+```
+kubectl -n falco port-forward svc/falco-falcosidekick-ui 2802
+```
 
 
 ## Links
 
 https://github.com/falcosecurity/evolution/issues/4
+
+https://falco.org/docs/getting-started/falco-kubernetes-quickstart/
