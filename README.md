@@ -17,5 +17,6 @@ helm repo update
 ```
 helm install falco falcosecurity/falco \
     --create-namespace \
-    --namespace falco
+    --namespace falco \
+    --set driver.kind=ebpf
 ```
