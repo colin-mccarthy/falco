@@ -11,6 +11,11 @@ bash sysdig.sh
 kind get clusters
 
 
+
+
+## linux headers
+
+
 ```
 #!/bin/bash
 
@@ -24,6 +29,7 @@ docker cp /usr/src cluster01-control-plane:/usr
 ```
 
 
+## install falco
 
 ``` 
 helm repo add falcosecurity https://falcosecurity.github.io/charts
