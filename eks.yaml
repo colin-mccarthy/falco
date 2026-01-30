@@ -1,0 +1,4 @@
+aws login
+
+eksctl create cluster --config-file cluser.yaml
+
