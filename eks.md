@@ -1,8 +1,7 @@
 aws login
+aws configure
 
 eksctl create cluster --config-file cluser.yaml
-
-
 
 eksctl delete cluster -f cluster.yaml
 
