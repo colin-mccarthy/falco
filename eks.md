@@ -15,6 +15,10 @@ eksctl delete cluster --name=my-cluster --region=us-east-1 --wait
 eksctl create nodegroup --cluster=my-cluster --name=nodes --region=us-east-1 --node-type=t2.medium --nodes=2 --nodes-min=1 --nodes-max=3
 
 
+aws eks update-kubeconfig --region us-east-1 --name my-cluster
+
+
+
 ## Links
 
 https://docs.aws.amazon.com/eks/latest/eksctl/dry-run.html
