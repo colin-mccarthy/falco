@@ -24,7 +24,14 @@ aws eks update-kubeconfig --region us-east-1 --name my-cluster
 
 ## Links
 
+kubectl config set-context --current --namespace=voting-app 
+
+
+
 https://docs.aws.amazon.com/eks/latest/eksctl/dry-run.html
+
+
+## Voting app
 
 
 
