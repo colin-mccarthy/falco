@@ -33,6 +33,8 @@ https://docs.aws.amazon.com/eks/latest/eksctl/dry-run.html
 
 ## Voting app
 
+kubectl config set-context --current --namespace=voting-app 
+
 
 
 
